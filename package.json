@@ -1,0 +1,12 @@
+{
+  "name": "15.suport-tickets-api",
+  "version": "1.0.0",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "tedevst": "node --watch src/server.js"
+  },
+  "author": "Amanda Santana",
+  "license": "ISC",
+  "description": "API de gerenciamento de tickets de suporte."
+}
