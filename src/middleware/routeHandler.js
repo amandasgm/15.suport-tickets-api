@@ -10,5 +10,5 @@ export function routeHandler(request, response){
     return route.controller({ request, response })
   }
 
-  return response.writeHead(404).end("not found")
+  return response.writeHead(404).end()
 }

@@ -1,4 +1,20 @@
 // 11. criando um controller que vai executar uma função especifica quando o metodo POST for chamado
+// 14. criando o id unico para cada ticket (UUID - comum em banco de dados)
+import { randomUUID } from "node:crypto"
+
 export function create({ request, response }){
-  return response.end("Criando com sucesso!")
+  // 13. criando o objeto de um ticket
+  const { equipment, description, user_name } = request.body 
+
+  const ticket = {
+    id: randomUUID(),
+    equipment,
+    description,
+    user_name,
+    status: "open",
+    created_at: new Date(),
+    updated_at: new Date()
+  }
+
+  return response.end(JSON.stringify(ticket))
 }
