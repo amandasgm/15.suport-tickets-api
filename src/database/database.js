@@ -36,4 +36,10 @@ export class Database {
     this.#persist()
   }
 
+  // 19. criando metodo de selecionar 
+  select(table){
+    let data = this.#database[table] ?? []
+    return data
+  }
+
 }
