@@ -53,4 +53,19 @@ export class Database {
     return data
   }
 
+  // 33. criando metodo de update
+  update(table, id, data){
+    const rowIndex = this.#database[table].findIndex((row) =>
+      row.id === id)
+
+    if(rowIndex > -1){ // significa que encontrou alguma coisa
+      this.#database[table][rowIndex] = {
+        ...this.#database[table][rowIndex],
+        ...data // ele vai sobrescrever o anterior
+      }
+
+      this.#persist()
+    }
+  }
+
 }
