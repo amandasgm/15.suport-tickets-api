@@ -1,1 +1,41 @@
-{"tickets":[{"id":"c0f444a4-fa2d-4af5-98d8-105c7fb75c86","equipment":"Computador","description":" Computador não liga","user_name":"Amanda Santana","status":"closed","created_at":"2025-08-17T16:51:24.276Z","updated_at":"2025-08-17T16:51:24.276Z"},{"id":"caeeca1e-ddc0-45e6-a7ea-18f5451f5aa2","equipment":"Mouse","description":"A tecla de espaço não funciona","user_name":"Pedro","status":"open","created_at":"2025-08-17T16:55:25.032Z","updated_at":"2025-08-17T20:15:29.309Z","update_at":"2025-08-17T20:14:38.783Z"}]}
+{
+  "tickets": [
+    {
+      "id": "c0f444a4-fa2d-4af5-98d8-105c7fb75c86",
+      "equipment": "Computador",
+      "description": " Computador não liga",
+      "user_name": "Amanda Santana",
+      "status": "closed",
+      "created_at": "2025-08-17T16:51:24.276Z",
+      "updated_at": "2025-08-17T16:51:24.276Z"
+    },
+    {
+      "id": "caeeca1e-ddc0-45e6-a7ea-18f5451f5aa2",
+      "equipment": "Mouse",
+      "description": "A tecla de espaço não funciona",
+      "user_name": "Pedro",
+      "status": "closed ",
+      "created_at": "2025-08-17T16:55:25.032Z",
+      "updated_at": "2025-08-17T20:45:21.729Z",
+      "update_at": "2025-08-17T20:14:38.783Z"
+    },
+    {
+      "id": "e6c73d39-f7c1-4e02-8fdb-b77c89bfecb3",
+      "equipment": "Monitor",
+      "description": "Monitor desliga derrepente",
+      "user_name": "Maria Julia",
+      "status": "closed ",
+      "created_at": "2025-08-17T20:38:09.611Z",
+      "updated_at": "2025-08-17T20:38:09.611Z"
+    },
+    {
+      "id": "855b20f1-0f78-4fae-9398-c3d3210c7239",
+      "equipment": "Monitor",
+      "description": "Monitor desliga derrepente",
+      "user_name": "Maria Julia",
+      "status": "open",
+      "created_at": "2025-08-17T20:40:36.896Z",
+      "updated_at": "2025-08-17T20:40:36.896Z"
+    }
+  ]
+}
