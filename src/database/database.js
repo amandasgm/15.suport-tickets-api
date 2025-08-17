@@ -22,4 +22,18 @@ export class Database {
     fs.writeFile(DATABASE_PATH, JSON.stringify(this.#database))
   }
 
+  // 17. inserindo o ticket
+  insert(table, data) {
+    // se a tabela já existe (é um array):
+    if (Array.isArray(this.#database[table])) {
+      this.#database[table].push(data)
+    } 
+    // Se a tabela não existe ainda:
+    else {
+      this.#database[table] = [data]
+    }
+
+    this.#persist()
+  }
+
 }

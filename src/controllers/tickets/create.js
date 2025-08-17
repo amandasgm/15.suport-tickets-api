@@ -2,7 +2,8 @@
 // 14. criando o id unico para cada ticket (UUID - comum em banco de dados)
 import { randomUUID } from "node:crypto"
 
-export function create({ request, response }){
+// 18. traz o database como argumento
+export function create({ request, response, database }){
   // 13. criando o objeto de um ticket
   const { equipment, description, user_name } = request.body 
 
@@ -16,5 +17,9 @@ export function create({ request, response }){
     updated_at: new Date()
   }
 
-  return response.end(JSON.stringify(ticket))
+  // 18.1 insere no objeto
+  database.insert("tickets", ticket)
+
+  // 18.2 adiciona o writeHead(201)
+  return response.writeHead(201).end(JSON.stringify(ticket))
 }
