@@ -17,7 +17,10 @@ export function routeHandler(request, response){
   if(route){
     const routeParams = request.url.match(route.path) // 26. obtendo parametros da rota
 
-    const { query } = routeParams.groups
+    // 32. adicionando todos os outros parametros
+    const { query, ...params } = routeParams.groups
+
+    request.params = params
     request.query = query ? extractQueryParams(query) : {} // 28.1 { status: 'closed' }
 
     return route.controller({ request, response, database })
