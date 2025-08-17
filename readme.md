@@ -3,7 +3,7 @@
 API de gerenciamento de tickets de suporte, desenvolvida em Node.js, com foco em modularidade, organização de código e boas práticas de arquitetura.
 
 ![Tela inicial](./src/img/support-tickets-image.jpg)
-Imagem meramente ilustrativa feita no figma para representar uma interface e ajudar no entendimento do projeto
+Imagem meramente ilustrativa feita no figma para representar uma interface
 
 
 ## ✨ Sobre o Projeto
