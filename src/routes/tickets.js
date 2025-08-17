@@ -3,6 +3,8 @@ import { create } from "../controllers/tickets/create.js";
 import { index } from "../controllers/tickets/index.js";
 // 32. importando o controller do metodo put e atualizando a linha 27
 import { update } from "../controllers/tickets/update.js"
+// 36. importando o controller do metodo patch e atualizando o controller
+import { updateStatus } from "../controllers/tickets/updateStatus.js"
 
 // 7. criando rotas para cada tipo de requisição
 export const tickets = [
@@ -26,5 +28,12 @@ export const tickets = [
     method: "PUT",
     path: "/tickets/:id",
     controller: update,
+  },
+
+  // 34. criando metodo patch
+  {
+    method: "PATCH",
+    path: "/tickets/:id/close",
+    controller: updateStatus,
   },
 ]
