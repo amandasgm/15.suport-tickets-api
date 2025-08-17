@@ -6,7 +6,6 @@ const DATABASE_PATH = new URL("db.json", import.meta.url)
 
 export class Database {
   #database = {}
-
   // utilizado toda vez que a classe é instanciada
   constructor(){
     fs.readFile(DATABASE_PATH, "utf8") // vai ler o arquivo
@@ -36,9 +35,21 @@ export class Database {
     this.#persist()
   }
 
-  // 19. criando metodo de selecionar 
-  select(table){
+  // 19. criando metodo de selecionar // 29. passando o filters como paramentro para filtrar
+  select(table, filters){
     let data = this.#database[table] ?? []
+
+    // 29. retornando o dado filtrado
+    if(filters){
+      data = data.filter((row) => {
+        return Object.entries(filters).some(([key, value]) => {
+          return row[key].toLowerCase().includes(value.toLowerCase( ))
+        })
+
+        return row
+      })
+    }
+
     return data
   }
 
