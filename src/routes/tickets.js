@@ -44,5 +44,5 @@ export const tickets = [
     method: "DELETE",
     path: "/tickets/:id",
     controller: remove,
-  },
+  }
 ]
