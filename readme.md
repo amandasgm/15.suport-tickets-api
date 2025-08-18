@@ -1,6 +1,6 @@
 # 🎫 Support Tickets API
 
-API de gerenciamento de tickets de suporte, desenvolvida em Node.js, com foco em modularidade, organização de código e boas práticas de arquitetura.
+API de gerenciamento de tickets de suporte, desenvolvida em **Node.js** puro, com foco em modularidade, organização de código e boas práticas de arquitetura.
 
 ![Tela inicial](./src/img/support-tickets-image.jpg)
 Imagem meramente ilustrativa feita no figma para representar uma interface
@@ -31,6 +31,8 @@ Middlewares customizados – Para parsing de JSON e roteamento manual
 - Criar novo ticket de suporte
 - Listar tickets existentes
 - Atualizar status ou informações de um ticket
+- Aplicar solução para mudar status
+- Remover ticket
 - Persistência em arquivo db.json
 
 
