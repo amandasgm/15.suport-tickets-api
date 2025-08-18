@@ -5,6 +5,8 @@ import { index } from "../controllers/tickets/index.js";
 import { update } from "../controllers/tickets/update.js"
 // 36. importando o controller do metodo patch e atualizando o controller
 import { updateStatus } from "../controllers/tickets/updateStatus.js"
+// 40. importando o remove
+import { remove } from "../controllers/tickets/remove.js"
 
 // 7. criando rotas para cada tipo de requisição
 export const tickets = [
@@ -35,5 +37,12 @@ export const tickets = [
     method: "PATCH",
     path: "/tickets/:id/close",
     controller: updateStatus,
+  },
+
+  //38. criando metodo de delete
+  {
+    method: "DELETE",
+    path: "/tickets/:id",
+    controller: remove,
   },
 ]
